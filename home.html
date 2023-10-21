@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="" class="img-logo">
+            <h1 class="logo-text"><a href="home.html" style="color: blue;">TOUR.</a></h1>
+        </div>
+        <div class="menu">
+            <ul class="menu-first">
+                <li class="menu-item"><a href="home.html">Trang chủ</a></li>
+                <li class="menu-item"><a href="destinations.html" class="menu-item1">Điểm đến</a>
+                    <ul class="sub-menu">
+                        <li><a href="miennui.html">Trung du miền núi Bắc Bộ</a></li>
+                        <li><a href="dbbb.html">Đồng bằng Bắc Bộ</a></li>
+                        <li><a href="btb.html">Bắc Trung Bộ</a></li>
+                        <li><a href="dhntb.html">Duyên hải Nam Trung Bộ</a></li>
+                        <li><a href="taynguyen.html">Tây Nguyên</a></li>
+                        <li><a href="dnb.html">Đông Nam Bộ</a></li>
+                        <li><a href="dbscl.html">Đồng Băng Sông Cửu Long</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="tour.html">Chuyến đi</a></li>
+                <li class="menu-item"><a href="blog.html">Blog</a></li>
+                <li class="menu-item"><a href="aboutus.html">Về chúng tôi</a></li>
+            </ul>
+        </div>
+        <div class="lg-search">
+            <input type="text" class="search" placeholder="Tìm kiếm... " >
+            <button class="btn-lg"><a href="signin.html">Đăng nhập</a></button>
+        </div>
+    </div>
+    <div class="banner">
+        <h1 class="slogan">Việt Nam những chuyến đi !
+            <br><p class="slogan1">"Tận hưởng mọi khoảnh khắc của chuyến đi của bạn”</p>
+        </h1>
+    </div>
+    <div class="banner-date">
+        <div class="location">
+            <label for="">Địa điểm</label>
+            <select name="" id="">
+                <option value="0">Lựa chọn </option>
+                <option value="1">Trung du miền núi Bắc Bộ</option>
+                <option value="2">Đồng bằng Bắc Bộ</option>
+                <option value="3">Bắc Trung Bộ</option>
+                <option value="4">Duyên hải Nam Trung Bộ</option>
+                <option value="5">Tây Nguyên</option>
+                <option value="6">Đông Nam</option>
+                <option value="7">Đồng bằng Sông Cửu Long</option>
+            </select>
+        </div>
+        <div class="checkin">
+            <label for="">Ngày đi</label>
+            <input type="date">
+        </div>
+        <div class="checkout">
+            <label for="">Ngày về</label>
+            <input type="date">
+        </div>
+        <button class="check">TÌM KIẾM</button>
+    </div>
+    <div class="local">
+        <div class="local1">
+            <img src="img/mn.avif" alt="" class="loc-img">
+           <div class="loc-content">
+             <a href="miennui.html"><p class="loc-text">Trung du miền núi Bắc Bộ
+                <br>Trung du và miền núi phía Bắc gồm 15 tỉnh chia thành Tây Bắc và Đông Bắc. Trong đó:
+                Tây Bắc: Hòa Bình, Sơn la, Điện Biên, Lai Châu, Lào Cai, Yên Bái.
+                Đông Bắc: Phú Thọ, Hà Giang, Tuyên Quang, Cao Bằng, Bắc Kạn, Thái Nguyên Lạng Sơn, Bắc Giang, Quảng Ninh.
+             </p></a>
+           </div>
+        </div>
+        <div class="local1">
+            <img src="img/dbbb.avif" alt="" class="loc-img">
+           <div class="loc-content">
+             <a href="dbbb.html"><p class="loc-text">Đồng bằng Bắc Bộ <br>Các tỉnh và thành phố của vùng kinh tế này gồm: Hà Nội, Bắc Ninh, Hải Phòng, Hải Dương, Hải Nam, Nam Định, Hưng Yên, Vĩnh Phúc, Thái Bình, Ninh Bình.</p></a>
+           </div>
+        </div>
+        <div class="local1">
+            <img src="img/btb.avif" alt="" class="loc-img">
+           <div class="loc-content">
+             <a href="btb.html"><p class="loc-text">Bắc Trung Bộ <br>ắc Trung Bộ gồm 6 tỉnh thành:  Thanh Hóa, Nghệ An, Hà Tĩnh, Quảng Bình, Quảng Trị, Thừa Thiên Huế.
+            Tổng diện tích khoảng 5, 15 triệu ha (chiếm 10,5% tổng diện tích cả nước), dân số khoảng 10,5 triệu dân (chiếm 15,5% tổng dân số cả nước), mật độ dân số 204 người/ km². 
+                </p></a>
+           </div>
+        </div>
+        <div class="local1">
+            <img src="img/ntb.avif" alt="" class="loc-img">
+           <div class="loc-content">
+             <a href="dhntb.html"><p class="loc-text">Duyên hải Nam Trung Bộ <br> Các tỉnh và thành phố trực thuộc gồm: Đà Nẵng, Quảng Nam, Quảng Ngãi, Bình Định, Phú Yên, Khánh Hòa, Bình Thuận, Ninh Thuận.</p></a>
+           </div>
+        </div>
+        <div class="local1">
+            <img src="img/tn.avif" alt="" class="loc-img">
+           <div class="loc-content">
+             <a href="taynguyen.html"><p class="loc-text">Tây Nguyên<br>Vùng kinh tế Tây Nguyên gồm các tỉnh: Kon Tum, Gia Lai, Đắk Lắk, Đắk Nông và Lâm Đồng.
+                Tổng diện tích 5,5 triệu ha, số dân khoảng 5,7 triệu người .</p></a>
+           </div>
+        </div>
+        <div class="local1">
+            <img src="img/dnb.avif" alt="" class="loc-img">
+           <div class="loc-content">
+             <a href="dnb.html"><p class="loc-text">Đông Nam Bộ<br>Đông Nam Bộ là một trong 7 vùng kinh tế của Việt Nam với các tỉnh thành gồm: Thành phố Hồ Chí Minh, Bà Rịa – Vũng Tàu, Bình Dương, Bình Phước, Đồng Nai và Tây Ninh.Tổng diện tích là 32.564,4 km², dân số khoảng 17.828.907 người và mật độ dân số trung bình 706 người/ km².</p></a>
+           </div>
+        </div>
+        <div class="local1">
+            <img src="img/scl.avif" alt="" class="loc-img">
+           <div class="loc-content">
+             <a href="dbscl.html"><p class="loc-text">Đồng bằng Sông Cửu Long<br>Vùng đồng bằng Sông Cửu Long gồm các tỉnh và thành phố: Cần Thơ, Long An, Tiền Giang, Bến Tre, Vĩnh Long, Trà Vinh, Hậu Giang, Sóc Trăng, Đồng Tháp, An Giang, Kiên Giang, Bạc Liêu và Cà Mau.Tổng diện tích là 40.547,2 km², dân số khoảng 17.367.169 người. Vùng kinh tế này là nơi có sản lượng lúa nước cao nhất Việt Nam.</p></a>
+           </div>
+        </div>
+        <div class="local1">
+            <h1 class="title">Địa điểm</h1>
+            <p class="desc-title">
+                Hành trình chinh phục VIỆT NAM !
+            </p>
+        </div>
+    </div>
+    <div class="review">
+        <div class="header-content">
+            <div class="title-primary">
+                <h1 class="title-desc" style="margin-top: 50px; margin-bottom: 10px;text-transform: uppercase;">Địa điểm yêu thích</h1>
+                <p class="" style="margin-bottom: 40px;font-size: 20px;">"Sống đẹp hơn với những kỷ niệm từ chuyến đi của bạn"</p>
+           </div>
+            <div class="nav">
+                <i class="fas btn fa-chevron-left btnLeft"></i
+                ><i class="fas btn fa-chevron-right btnRight"></i>
+            </div>
+        </div>
+        <div class="review-box">
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/hanoi1.avif"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Hà Nội
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/hagiang.avif"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Hà giang
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/haiphong.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Hải Phòng
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/ninhbinh.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Ninh Bình
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/danang.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Đà Nẵng
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/angiang.avif"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    An Giang
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/quang binh.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Quảng Bình
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/quảng trị.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Quảng Trị
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/namdinh.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Nam Định
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/thaibinh.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Thái Bình
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/hcm.avif"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Hồ Chí Minh
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/phuyen.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Phú yên
+                </a></div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img
+                        src="img/maichau.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="name"><a href="">
+                    Sơn La
+                </a></div>
+            </div>
+        </div>
+    </div>
+    <div class="tour">
+        <div class="title-primary">
+          <h1 class="title-desc" style="text-align: center; width: 100%; margin-top: 50px;text-transform: uppercase;">Chuyến đi yêu thích</h1>
+          <p class="" style="text-align: center; width: 100%;margin-bottom: 40px; font-size: 20px;">"Sống đẹp hơn với những kỷ niệm từ chuyến đi của bạn"</p>
+     </div>
+          <div class="tour-nav">
+              <i class="fas fa-chevron-left leftBtn" onclick="prevSlide()"></i>
+              <i class="fas fa-chevron-right rightBtn" onclick="nextSlide()"></i>
+          </div>
+          <div class="tour-box">
+            <div class="top-item">
+                <img src="img/bd.jpg" alt="" class="img-top">
+                <p class="top-title">Bái Đính - Tràng An - Cúc Phương 2 ngày 1 đêm</p>
+                <button class="btn-top"><a href="">
+                    Chi tiết
+                </a></button>
+            </div>
+            <div class="top-item">
+                <img src="img/doson.jpg" alt="" class="img-top">
+            <p class="top-title">Du lịch Biển Đồ Sơn - Hải Phòng (2 ngày)</p>
+                <button class="btn-top"><a href="">
+                    Chi tiết
+                </a></button>
+            </div>
+            <div class="top-item">
+                <img src="img/halong.jpg" alt="" class="img-top">
+                <p class="top-title">
+                    Tour du lịch Hà Nội-Sapa-Fansipan-Vịnh Hạ Long-Ninh Bình 5n4đ</p>
+                <button class="btn-top"><a href="">
+                    Chi tiết
+                </a></button>
+            </div>
+            <div class="top-item">
+                <img src="img/ninhbinh.jpg" alt="" class="img-top">
+                <p class="top-title">Du Lịch Bái Đính - Tràng An ( 1 ngày )</p>
+                <button class="btn-top"><a href="">
+                    Chi tiết
+                </a></button>
+            </div>
+            <div class="top-item">
+                <img src="img/hue2.jpg" alt="" class="img-top">
+                <p class="top-title">
+                    Tây Ninh - Hành trình chinh phục nóc nhà Nam Bộ - Tặng vé tham quan 3
+</p>
+                <button class="btn-top"><a href="">
+                    Chi tiết
+                </a></button>
+            </div>
+            <div class="top-item">
+                <img src="img/halong.jpg" alt="" class="img-top">
+            <p class="top-title">
+                Tour du lịch Hà Nội-Sapa-Fansipan-Vịnh Hạ Long-Ninh Bình 5n4đ</p>
+                <button class="btn-top"><a href="">
+                    Chi tiết
+                </a></button>
+            </div>
+            <div class="top-item">
+                <img src="img/hue1.jpg" alt="" class="img-top">
+                <p class="top-title">
+                    Walking City Tour - Ký Ức Sài Gòn Xưa
+</p>
+                <button class="btn-top"><a href="">
+                    Chi tiết
+                </a></button>
+            </div>
+            <div class="top-item">
+                <img src="img/TaDung.jpg" alt="" class="img-top">
+            <p class="top-title">
+                DU LỊCH NAM CÁT TIÊN - KDL SUỐI MƠĐỒNG NAI - NAM CÁT TIÊN
+
+            </p>
+                <button class="btn-top"><a href="">
+                    Chi tiết
+                </a></button>
+            </div>
+            <div class="top-item">
+                <img src="img/bloc.jpg" alt="" class="img-top">
+                <p class="top-title">
+                    DU LỊCH VƯỜN QUỐC GIA NAM CÁT TIÊN - KHU DU LỊCH SUỐI MƠ - ORCHARD HOME RESORTTP. HỒ CHÍ MINH - NAM CÁT TIÊN
+                </p>
+                <button class="btn-top"><a href="">
+                    Chi tiết
+                </a></button>
+            </div>
+        </div>
+      </div>
+    <div class="title-pri">
+        <h1 class="title-blog" style="margin-top: 50px;">TOUR BLOG REVIEW</h1>
+        <p class="pra-blog" style="font-size: 20px;">"Chinh phục những điều tuyệt vời nhất của thế giới."</p>
+    </div>
+    <div class="blog">
+        <div class="blog-img">
+            <img src="img/bn1.avif" alt="" class="img-bg">
+        </div>
+        <div class="blog-text">
+            <p class="text-pri">34 Địa Điểm Du Lịch Gần Sài Gòn Cho Cuối Tuần Năng Động</p>
+            <p class="text-secon">"Cuối tuần nên đi đâu chơi gần Sài Gòn? Đã đến lúc kế hoạch du lịch gần nơi bạn sống. Hãy tham khảo ngay các địa điểm du lịch gần Sài Gòn dưới đây để lên kế hoạch khám phá Sài Gòn thật trọn vẹn nhé!
+                Là một trong những thành phố náo nhiệt nhất đất nước hình chữ S, có bao giờ bạn tự hỏi “liệu gần Sài Gòn có những hoạt động vui chơi nào hay ho?”. Quả thật 48 giờ đồng hồ của dịp cuối tuần sẽ buồn chán lắm, nếu #teamKlook cứ giam mình trong bốn bức tường hay những hoạt động giải trí mang tính chất “cho có lệ”.
+                Thực ra là, ngay tại thành phố Hồ Chí Minh và vùng ngoại thành có rất nhiều hoạt động vi vu thú vị - từ khám phá thiên nhiên, vận động thử thách thể chất, nghỉ dưỡng “chill liu riu” hay ăn uống tẹt ga”. Sài Gòn cuối tuần có gì chơi à? Khám phá ngay những địa điểm du lịch gần Sài Gòn trong bài viết này nhé!"</p>
+            <button class="btn-blog"><a href="blog.html" style="color: white;">Xem Thêm</a></button>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <img src="img/shape9.png" alt="" class="footer-img">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="ion-social-instagram icon-ft"></i></a>
+                <a href="#"><i class="ion-social-snapchat icon-ft"></i></a>
+                <a href="#"><i class="ion-social-twitter icon-ft"></i></a>
+                <a href="#"><i class="ion-social-facebook icon-ft"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="home.html">Trang chủ</a></li>
+                <li class="list-inline-item"><a href="destinations.html">Địa điểm</a></li>
+                <li class="list-inline-item"><a href="tour.html">Chuyến đi</a></li>
+                <li class="list-inline-item"><a href="blog.html">Blog</a></li>
+                <li class="list-inline-item"><a href="aboutus.html">Về chúng tôi</a></li>
+            </ul>
+            <p class="copyright">©CopyWrite 2023 by Da Thuong</p>
+        </footer>
+    </div>
+    <script src="main.js">
+         let currentIndex = 0;
+        const tourBox = document.querySelector('.tour-box');
+        const topItems = document.querySelectorAll('.top-item');
+        const numItems = topItems.length;
+        const itemWidth = topItems[0].clientWidth;
+
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        }
+
+        function nextSlide() {
+            if (currentIndex < numItems - 1) {
+                currentIndex++;
+                updateSlider();
+            }
+        }
+
+        function updateSlider() {
+            const offset = -currentIndex * itemWidth;
+            tourBox.style.transform = `translateX(${offset}px)`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingIn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="signup">
+        <div class="login">
+            <div class="logo-title">
+                <a href="home.html"><img src="img/logo.png" alt="" class="logo"></a>
+                <h1 class="login-title">Xin chào !</h1>
+            </div>
+            <div class="login-btn">
+                <button class="btn-item">
+                    <i class="fa-brands fa-google"></i>
+                    Đăng kí với Google
+                </button>
+                <button class="btn-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </button>
+            </div>
+            <div class="continue">
+                <span class="contnue-w"></span>
+                <p class="continue-text">tiếp tục với</p>
+                <span class="contnue-w"></span>
+            </div>
+            <div class="login-form">
+                <div class="input-row">
+                    <input class="input-item" type="Email" placeholder="Email" id="email" autocomplete="off" />
+                    <small></small>
+                </div>
+                <div class="input-row">
+                    <input class="input-item" type="text" placeholder="Password" id="password" autocomplete="off"/>
+                    <small></small>
+                </div>
+                <div class="input-row">
+                    <button class="btn" id="btn-login">
+                        ĐĂNG NHẬP
+                    </button>
+                </div>
+            </div>
+            <p class="last">Bạn chưa có tài khoản 
+                <a href="signup.html">Đăng kí</a>
+            </p>
+        </div>
+    </div>
+    <script >
+        const usernameEle = document.getElementById('username');
+        const emailEle = document.getElementById('email');
+        const passwordEle = document.getElementById('password');
+        const btnLogin = document.getElementById('btn-login');
+        const inputEles = document.querySelectorAll('.input-row');
+        btnLogin.addEventListener('click', function () {
+            Array.from(inputEles).map((ele) =>
+                ele.classList.remove('success', 'error')
+            );
+            let isValid = checkLogin();
+
+            if (isValid) {
+                alert('Đăng nhập thành công')
+                window.location.href = 'home.html';      
+            } else {
+                alert('vui kiểm tra email password');
+                    
+            }
+        });
+function checkLogin() {
+    let emailValue = emailEle.value;
+    let passwordValue = passwordEle.value;
+
+    let isCheck = true;
+
+    if (emailValue == '') {
+                setError(emailEle, 'Email không được để trống');
+                isCheck = false;
+            } else if (!isEmail(emailValue)) {
+                setError(emailEle, 'Email không đúng định dạng');
+                isCheck = false;
+            } else {
+                setSuccess(emailEle);
+            }
+
+    if (passwordValue === '') {
+        setError(passwordEle, 'Vui lòng nhập mật khẩu');
+        isCheck = false;
+    } else {
+        setSuccess(passwordEle);
+    }
+
+    return isCheck;
+}
+
+function setSuccess(ele) {
+    ele.parentNode.classList.add('success');
+}
+
+function setError(ele, message) {
+    let parentEle = ele.parentNode;
+    parentEle.classList.add('error');
+    parentEle.querySelector('small').innerText = message;
+}
+function isEmail(email) {
+            return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+                email
+            );
+        }
+    </script>
+</body>
+</html>
