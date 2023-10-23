@@ -50,7 +50,7 @@
     <div class="banner-date">
         <div class="location">
             <label for="">Địa điểm</label>
-            <select name="" id="">
+            <select name="" id="tinh">
                 <option value="0">Lựa chọn </option>
                 <option value="1">Trung du miền núi Bắc Bộ</option>
                 <option value="2">Đồng bằng Bắc Bộ</option>
@@ -69,7 +69,7 @@
             <label for="">Ngày về</label>
             <input type="date">
         </div>
-        <button class="check">TÌM KIẾM</button>
+        <button class="check" onclick="check()">TÌM KIẾM</button>
     </div>
     <div class="local">
         <div class="local1">
@@ -142,12 +142,12 @@
         <div class="review-box">
             <div class="box">
                 <div class="image">
-                    <img
+                    <a href="item.html"><img
                         src="img/hanoi1.avif"
                         alt=""
-                    />
+                    /></a>
                 </div>
-                <div class="name"><a href="">
+                <div class="name"><a href="item.html">
                     Hà Nội
                 </a></div>
             </div>
@@ -298,7 +298,7 @@
             <div class="top-item">
                 <img src="img/bd.jpg" alt="" class="img-top">
                 <p class="top-title">Bái Đính - Tràng An - Cúc Phương 2 ngày 1 đêm</p>
-                <button class="btn-top"><a href="">
+                <button class="btn-top"><a href="index.html">
                     Chi tiết
                 </a></button>
             </div>
@@ -432,5 +432,6 @@
             tourBox.style.transform = `translateX(${offset}px)`;
         }
     </script>
+    <script src="check.js"></script>
 </body>
 </html>
